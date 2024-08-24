@@ -193,16 +193,16 @@ _FILES_MAPPING = {
     "Fortran": _FORTRAN_FILES,
     "C": _C_FILES,
     "GAP": _GAP_FILES,
-    "matlab": _GITHUB_MATLAB_FILES,
+    "Matlab": _GITHUB_MATLAB_FILES,
     "Coq": _GITHUB_COQ_FILES,
     "Isabelle": _GITHUB_ISABELLE_FILES,
     "Lean": _GITHUB_LEAN_FILES,
     "Haskell": _HASKELL_FILES,
     "Idris": _IDRIS_FILES,
-    "Isa_proofsteps": _ISA_PROOFSTEPS_FILES,
+    "Isa_Proofsteps": _ISA_PROOFSTEPS_FILES,
     "Julia": _JULIA_FILES,
     "Jupyter": _JUPYTER_NOTEBOOK_FILES,
-    "Lean_proofsteps": _LEAN_PROOFSTEPS_FILES,
+    "Lean_Proofsteps": _LEAN_PROOFSTEPS_FILES,
     "Maple": _MAPLE_FILES,
     "Python": _PYTHON_FILES,
     "R": _R_FILES,
@@ -329,8 +329,8 @@ class ProofPile2(datasets.GeneratorBasedBuilder):
             description="Idris subset"
         ),
         ProofPile2Config(
-            name='Isa_proofsteps',
-            subsets=['Isa_proofsteps'],
+            name='Isa_Proofsteps',
+            subsets=['Isa_Proofsteps'],
             version=VERSION,
             description="ISA Proofsteps subset"
         ),
@@ -347,8 +347,8 @@ class ProofPile2(datasets.GeneratorBasedBuilder):
             description="Jupyter Notebook subset"
         ),
         ProofPile2Config(
-            name='Lean_proofsteps',
-            subsets=['Lean_proofsteps'],
+            name='Lean_Proofsteps',
+            subsets=['Lean_Proofsteps'],
             version=VERSION,
             description="Lean Proofsteps subset"
         ),
@@ -414,7 +414,7 @@ class ProofPile2(datasets.GeneratorBasedBuilder):
                 (datasets.Split.TRAIN, datasets.Split.VALIDATION, datasets.Split.TEST)
             )
         ]
-
+        
     def _generate_examples(self, data_files):
         key = 0
         for name in data_files:
@@ -438,3 +438,4 @@ class ProofPile2(datasets.GeneratorBasedBuilder):
                                 instance["meta"] = dict()
                             yield key, {"text": instance["text"], "meta": json.dumps(instance["meta"])}
                             key += 1
+            
