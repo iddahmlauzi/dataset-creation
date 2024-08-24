@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: dataset-creation
+Version: 0.0.1
+Summary: Creating Data for the Alignment Project
+Home-page: https://github.com/iddahmlauzi/dataset-creation
+Author: Iddah Mlauzi
+Author-email: iddah@gmail.com
+License: Apache 2.0
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: fire
+Requires-Dist: dill
+Requires-Dist: networkx>=2.5
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: lark-parser
+Requires-Dist: tensorboard
+Requires-Dist: pandas
+Requires-Dist: progressbar2
+Requires-Dist: requests
+Requires-Dist: aiohttp
+Requires-Dist: numpy<2
+Requires-Dist: plotly
+Requires-Dist: wandb
+Requires-Dist: matplotlib
+Requires-Dist: nvidia-htop
+Requires-Dist: openai
+Requires-Dist: anthropic
+Requires-Dist: jsonlines
+Requires-Dist: twine
+Requires-Dist: dspy-ai
+Requires-Dist: torch==2.2.1
+Requires-Dist: transformers>=4.40
+Requires-Dist: accelerate==0.29.2
+Requires-Dist: datasets==2.14.7
+Requires-Dist: evaluate==0.4.1
+Requires-Dist: bitsandbytes==0.43.0
+Requires-Dist: einops
+Requires-Dist: flash-attn>=2.5.8
+Requires-Dist: vllm==0.4.1
+Requires-Dist: zstandard
+
+Dataset creation for Alignment Project
